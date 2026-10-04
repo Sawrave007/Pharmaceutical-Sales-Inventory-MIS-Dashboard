@@ -136,13 +136,10 @@ Dimension tables are used for slicers and report axes, while measures are calcul
 
 <!-- Add your screenshots here -->
 
-<!-- ![Executive Overview](images/executive_overview.png) -->
+<img width="1428" height="787" alt="Screenshot 2026-10-05 030821" src="https://github.com/user-attachments/assets/64f97a89-ccf5-4c8a-8394-d62d93d1f680" />
 
-<!-- ![Sales Performance](images/sales_performance.png) -->
+<img width="1408" height="807" alt="Screenshot 2026-10-05 030915" src="https://github.com/user-attachments/assets/b46c285c-fc46-4df5-b843-d4b3df586af9" />
 
-<!-- ![Product Analysis](images/product_analysis.png) -->
-
-<!-- ![Returns and Expiry](images/returns_expiry.png) -->
 
 ---
 
