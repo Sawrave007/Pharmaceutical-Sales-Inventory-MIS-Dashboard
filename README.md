@@ -96,39 +96,12 @@ SQL scripts are stored in the `sql/` folder.
 `powerbi_model_views.sql` creates reporting-ready SQL views for Power BI:
 
 * `vw_sales_clean`
-* `vw_dim_month`
-* `vw_dim_territory`
-* `vw_dim_product`
+
 
 The sales view preserves the **invoice-line grain** rather than incorrectly treating `Invoice_ID` as a unique transaction key.
 
 ---
 
-## Power BI Model
-
-The Power BI report uses a simple star schema.
-
-```text
-                 vw_dim_month
-                      │
-                      │
-vw_dim_territory ── vw_sales_clean ── vw_dim_product
-```
-
-### Tables
-
-| Table              | Purpose                                                                                        |
-| ------------------ | ---------------------------------------------------------------------------------------------- |
-| `vw_sales_clean`   | Main sales fact containing invoice-line records, net sales, returns, and expiry-related fields |
-| `vw_dim_month`     | Month lookup for time-based analysis                                                           |
-| `vw_dim_territory` | Territory lookup for geographic analysis                                                       |
-| `vw_dim_product`   | Product and category lookup                                                                    |
-
-Relationships are **one-to-many** with **single-direction filtering**.
-
-The report uses **Import mode**.
-
-Dimension tables are used for slicers and report axes, while measures are calculated from the sales fact.
 
 ---
 
